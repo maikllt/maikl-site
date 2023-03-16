@@ -14,7 +14,7 @@
   padding-left: 1rem;
 
   svg {
-    margin-top: $spacing-09;
+    margin-top: $spacing-07;
   }
 
   // top border in only small breakpoints to prevent overrides
@@ -38,7 +38,7 @@
     border-left: 1px solid $border-subtle-01;
 
     svg {
-      margin-top: $spacing-12;
+      margin-top: $spacing-07;
     }
   }
 }
@@ -56,4 +56,8 @@
   @include breakpoint-between(321px, md) {
     max-width: 75%;
   }
+}
+
+.info-card-links a {
+  margin-right: $spacing-05;
 }

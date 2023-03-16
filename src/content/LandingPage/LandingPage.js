@@ -1,110 +1,75 @@
 import React from 'react';
-import {
-  Breadcrumb,
-  BreadcrumbItem,
-  Button,
-  Tabs,
-  Tab,
-  TabList,
-  TabPanels,
-  TabPanel,
-  Grid,
-  Column,
-} from '@carbon/react';
+import { Grid, Column, Link } from '@carbon/react';
 import { InfoSection, InfoCard } from '../../components/Info';
-import { Globe, Application, PersonFavorite } from '@carbon/react/icons';
+import {
+  Chat,
+  Person,
+  LogoLinkedin,
+  LogoGithub,
+  Email,
+} from '@carbon/react/icons';
 
 const LandingPage = () => {
   return (
     <Grid className="landing-page" fullWidth>
-      <Column lg={16} md={8} sm={4} className="landing-page__banner">
-        <Breadcrumb noTrailingSlash aria-label="Page navigation">
-          <BreadcrumbItem>
-            <a href="/">Getting started</a>
-          </BreadcrumbItem>
-        </Breadcrumb>
-        <h1 className="landing-page__heading">
-          Design &amp; build with Carbon
-        </h1>
+      <Column lg={16} md={8} sm={4} className="landing-page__r1">
+        <Grid className="intro-group-content">
+          <Column md={4} lg={4} sm={4}>
+            <img
+              height={200}
+              className="landing-page__illo"
+              src="avataaars.png"
+              alt="Tomas avatar"
+            />
+          </Column>
+          <Column md={4} lg={12} sm={4} className="landing-page__content">
+            <h2 className="landing-page__subheading">Welcome!</h2>
+            <p>
+              You can find my personal experiments below. You can always reach
+              me here:
+            </p>
+            <Link href="mailto:hi@maikl.lt" target="_blank">
+              <Email size="40" />
+            </Link>
+            <Link
+              href="https://www.linkedin.com/in/tomasdambrauskas/"
+              target="_blank">
+              <LogoLinkedin size="40" />
+            </Link>
+            <Link href="https://github.com/maikllt" target="_blank">
+              <LogoGithub size="40" />
+            </Link>
+          </Column>
+        </Grid>
       </Column>
       <Column lg={16} md={8} sm={4} className="landing-page__r2">
-        <Tabs defaultSelectedIndex={0}>
-          <TabList className="tabs-group" aria-label="Tab navigation">
-            <Tab>About</Tab>
-            <Tab>Design</Tab>
-            <Tab>Develop</Tab>
-          </TabList>
-          <TabPanels>
-            <TabPanel>
-              <Grid className="tabs-group-content">
-                <Column
-                  md={4}
-                  lg={7}
-                  sm={4}
-                  className="landing-page__tab-content">
-                  <h2 className="landing-page__subheading">What is Carbon?</h2>
-                  <p className="landing-page__p">
-                    Carbon is IBM’s open-source design system for digital
-                    products and experiences. With the IBM Design Language as
-                    its foundation, the system consists of working code, design
-                    tools and resources, human interface guidelines, and a
-                    vibrant community of contributors.
-                  </p>
-                  <Button>Learn more</Button>
-                </Column>
-                <Column md={4} lg={{ span: 8, offset: 7 }} sm={4}>
-                  <img
-                    className="landing-page__illo"
-                    src={`${process.env.PUBLIC_URL}/tab-illo.png`}
-                    alt="Carbon illustration"
-                  />
-                </Column>
-              </Grid>
-            </TabPanel>
-            <TabPanel>
-              <Grid className="tabs-group-content">
-                <Column
-                  lg={16}
-                  md={8}
-                  sm={4}
-                  className="landing-page__tab-content">
-                  Rapidly build beautiful and accessible experiences. The Carbon
-                  kit contains all resources you need to get started.
-                </Column>
-              </Grid>
-            </TabPanel>
-            <TabPanel>
-              <Grid className="tabs-group-content">
-                <Column
-                  lg={16}
-                  md={8}
-                  sm={4}
-                  className="landing-page__tab-content">
-                  Carbon provides styles and components in Vanilla, React,
-                  Angular, and Vue for anyone building on the web.
-                </Column>
-              </Grid>
-            </TabPanel>
-          </TabPanels>
-        </Tabs>
-      </Column>
-      <Column lg={16} md={8} sm={4} className="landing-page__r3">
-        <InfoSection heading="The Principles">
+        <InfoSection heading="The 'Tools'">
           <InfoCard
-            heading="Carbon is Open"
-            body="It's a distributed effort, guided by the principles of the open-source movement. Carbon's users are also it's makers, and everyone is encouraged to contribute."
-            icon={() => <PersonFavorite size={32} />}
+            heading="This website"
+            body="It was to try IBM Carbon Design System and following the tutorial for React. Will serve as a box 
+            for my future experiments"
+            icon={() => <Person size={32} />}
+            href="#"
+            gitHref="https://github.com/maikllt/maikl-site"
           />
           <InfoCard
-            heading="Carbon is Modular"
-            body="Carbon's modularity ensures maximum flexibility in execution. It's components are designed to work seamlessly with each other, in whichever combination suits the needs of the user."
+            heading="WhatsApp trimmer"
+            body="Service that allows paste phone number and cleans it from unsupported WhatsApp (WA) characters and 
+            opens WA to send the message"
+            icon={() => <Chat size={32} />}
+            href="/wa"
+            gitHref="https://github.com/maikllt/WhatsApp-trimmer"
+          />
+          {/* <InfoCard
+            heading="IKIGAI"
+            body=""
             icon={() => <Application size={32} />}
           />
           <InfoCard
-            heading="Carbon is Consistent"
-            body="Based on the comprehensive IBM Design Language, every element and component of Carbon was designed from the ground up to work elegantly together to ensure consistent, cohesive user experiences."
+            heading="WhatsTheStatus"
+            body=""
             icon={() => <Globe size={32} />}
-          />
+          /> */}
         </InfoSection>
       </Column>
     </Grid>
