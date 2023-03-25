@@ -7,6 +7,7 @@ import {
   LogoLinkedin,
   LogoGithub,
   Email,
+  EarthFilled
 } from '@carbon/react/icons';
 
 const LandingPage = () => {
@@ -49,7 +50,7 @@ const LandingPage = () => {
             body="It was to try IBM Carbon Design System and following the tutorial for React. Will serve as a box 
             for my future experiments"
             icon={() => <Person size={32} />}
-            href="#"
+            href="/"
             gitHref="https://github.com/maikllt/maikl-site"
           />
           <InfoCard
@@ -57,15 +58,17 @@ const LandingPage = () => {
             body="Service that allows paste phone number and cleans it from unsupported WhatsApp (WA) characters and 
             opens WA to send the message"
             icon={() => <Chat size={32} />}
-            href="/wa"
+            href="/wa-trimmer"
             gitHref="https://github.com/maikllt/WhatsApp-trimmer"
           />
-          {/* <InfoCard
-            heading="IKIGAI"
-            body=""
-            icon={() => <Application size={32} />}
-          />
           <InfoCard
+            heading="Your IKIGAI"
+            body="Trying OpenAI API. Allows to find your purpose using Japanese IKIGAI method."
+            icon={() => <EarthFilled size={32} />}
+            href="/ikigai"
+            gitHref="https://github.com/maikllt/maikl-site"
+          />
+          {/* <InfoCard
             heading="WhatsTheStatus"
             body=""
             icon={() => <Globe size={32} />}

@@ -4,7 +4,8 @@ import { Content, Theme } from '@carbon/react';
 import SiteHeader from './components/SiteHeader';
 import { Route, Switch } from 'react-router-dom';
 import LandingPage from './content/LandingPage';
-import wa from './content/wa';
+import WApage from './content/WApage';
+import IKIGAIpage from './content/IKIGAIpage';
 
 class App extends Component {
   render() {
@@ -16,7 +17,8 @@ class App extends Component {
         <Content>
           <Switch>
             <Route exact path="/" component={LandingPage} />
-            <Route path="/wa" component={wa} />
+            <Route path="/wa-trimmer" component={WApage} />
+            <Route path="/ikigai" component={IKIGAIpage} />
           </Switch>
         </Content>
       </>

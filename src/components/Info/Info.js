@@ -1,6 +1,7 @@
 import React from 'react';
-import { Grid, Column, Link } from '@carbon/react';
+import { Grid, Column } from '@carbon/react';
 import { LogoGithub } from '@carbon/react/icons';
+import { Link } from "react-router-dom";
 
 // Take in a phrase and separate the third word in an array
 function createArrayFromPhrase(phrase) {
@@ -25,8 +26,7 @@ const InfoCard = props => {
     <Column sm={4} md={8} lg={4} className="info-card">
       <Link
         className="info-card__heading-link"
-        href={props.href}
-        target="_blank">
+        to={props.href}>
         <h4 className="info-card__heading">
           {`${splitHeading[0]} `}
           <strong>{splitHeading[1]}</strong>
@@ -34,12 +34,12 @@ const InfoCard = props => {
       </Link>
       <p className="info-card__body">{props.body}</p>
       <Column className="info-card-links">
-        <Link href={props.href} target="_blank">
+        <Link to={props.href}>
           {props.icon()}
         </Link>
-        <Link href={props.gitHref} target="_blank">
+        <a href={props.gitHref} target="_blank" rel="noopener noreferrer">
           <LogoGithub size="32" />
-        </Link>
+        </a>
       </Column>
     </Column>
   );

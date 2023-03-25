@@ -23,9 +23,9 @@ const SiteHeader = () => (
             IBM BPM/BAW
           </HeaderMenuItem> */}
           <HeaderMenu aria-label="Tools" menuLinkName="Tools">
-            <HeaderMenuItem href="#">WhatsApp trimmer</HeaderMenuItem>
-            {/* <HeaderMenuItem href="#">IKIGAI</HeaderMenuItem>
-                <HeaderMenuItem href="#">WhatsTheStatus</HeaderMenuItem> */}
+            <HeaderMenuItem element={Link} to="/wa-trimmer">WhatsApp trimmer</HeaderMenuItem>
+             <HeaderMenuItem element={Link} to="/ikigai">IKIGAI</HeaderMenuItem>
+            {/*<HeaderMenuItem href="#">WhatsTheStatus</HeaderMenuItem> */}
           </HeaderMenu>
         </HeaderNavigation>
       </Header>
