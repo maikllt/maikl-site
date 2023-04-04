@@ -2,8 +2,8 @@ import React from 'react';
 
 const WApage = () => {
   return (
-    <div class="whatsapp-trimmer">
-      <iframe title="WhatsApp trimmer" src="https://whats-app-trimmer.vercel.app/index.html" />
+    <div className="whatsapp-trimmer">
+      <iframe id="whatsapp-trimmer" title="WhatsApp trimmer" src={process.env.REACT_APP_WA_TRIMMER_URL} />
     </div>
   );
 }
