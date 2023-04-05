@@ -64,11 +64,14 @@ const IKIGAIpage = () => {
           {({ open, setOpen }) => (
             <Modal
               modalHeading="Your IKIGAI"
-              primaryButtonText="Try again"
+              primaryButtonText="Start over"
+              onRequestSubmit={() => setOpen(false)}
               open={open}
               onRequestClose={() => setOpen(false)}>
-              <p>SORRY! work still in progress... </p>
-              <Loading className="ikigai-loeader" withOverlay={false} />;
+              <div className="ikigai-modal-content">
+                <p>SORRY! work still in progress, please try another day... </p>
+                <Loading className="ikigai-loader" withOverlay={false} />;
+              </div>
             </Modal>
           )}
         </ModalStateManager>

@@ -25,3 +25,7 @@
 .ikigai-page-content label{
   @include type-style('heading-compact-01');
 }
+
+.ikigai-loader {
+  margin: $spacing-07 auto 0;
+}
