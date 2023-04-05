@@ -1,21 +1,27 @@
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  .circle {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background-color: #f5f5f5;
-    margin-right: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .circle h2 {
-    font-size: 24px;
-  }
+@use '@carbon/react/scss/spacing' as *;
+@use '@carbon/react/scss/type' as *;
+
+.ikigai-picture {
+  height: 300px;
+}
+
+.ikigai-page {
+  padding-top: $spacing-07;
+}
+
+.ikigai-page__heading {
+  @include type-style('productive-heading-04');
+}
+
+.ikigai-page__p {
+  margin-top: $spacing-06;
+  margin-bottom: $spacing-08;
+}
+
+.ikigai-page-content TextArea {
+  margin-bottom: $spacing-07;
+}
+
+.ikigai-page-content label{
+  @include type-style('heading-compact-01');
+}
