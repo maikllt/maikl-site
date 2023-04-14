@@ -1,4 +1,4 @@
-import React, { useState, setOpen } from 'react';
+import React, { useState } from 'react';
 import {
   Button,
   Grid,
@@ -33,28 +33,24 @@ const IKIGAIpage = () => {
           enableCounter
           id="text-area-1"
           labelText="What you LOVE"
-          maxCount={300}
           rows="3"
         />
         <TextArea
           enableCounter
           id="text-area-2"
           labelText="What the world NEEDS"
-          maxCount={300}
           rows="3"
         />
         <TextArea
           enableCounter
           id="text-area-3"
           labelText="What you can be PAID FOR"
-          maxCount={300}
           rows="3"
         />
         <TextArea
           enableCounter
           id="text-area-4"
           labelText="What are you GOOD AT"
-          maxCount={300}
           rows="3"
         />
         <ModalStateManager
