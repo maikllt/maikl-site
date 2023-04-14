@@ -28,7 +28,7 @@ const IKIGAIpage = () => {
           alt="IKIGAI diagram"
         />
       </Column>
-      <Column lg={8} md={4} sm={4} className="ikigai-page-content">
+      <Column lg={10} md={4} sm={4} className="ikigai-page-content">
         <TextArea
           enableCounter
           id="text-area-1"
