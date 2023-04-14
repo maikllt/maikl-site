@@ -6,7 +6,7 @@ import {
   HeaderNavigation,
   HeaderMenuItem,
   SkipToContent,
-  HeaderMenu,
+  HeaderMenu
 } from '@carbon/react';
 import { Link } from 'react-router-dom';
 
@@ -24,11 +24,15 @@ const SiteHeader = () => (
           </HeaderMenuItem> */}
           <HeaderMenu aria-label="Tools" menuLinkName="Tools">
             <HeaderMenuItem element={Link} to="/wa-trimmer">WhatsApp trimmer</HeaderMenuItem>
-             <HeaderMenuItem element={Link} to="/ikigai">IKIGAI</HeaderMenuItem>
+            <HeaderMenuItem element={Link} to="/ikigai">IKIGAI</HeaderMenuItem>
             {/*<HeaderMenuItem href="#">WhatsTheStatus</HeaderMenuItem> */}
           </HeaderMenu>
         </HeaderNavigation>
-      </Header>
+        <a className="paypal-donation-container" href="https://www.paypal.com/donate/?hosted_button_id=BS8W5F8XZA9K8"
+          target="_blank" rel="noopener noreferrer">
+          <img className="paypal-donation-image" src="paypal-donate-button.png" />
+        </a>
+      </Header >
     )}
   />
 );

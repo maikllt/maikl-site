@@ -10,3 +10,10 @@
 .cds--header__global .cds--popover-caret {
   background-color: colors.$gray-20;
 }
+
+.paypal-donation-container {
+  height: 55px;
+  display: flex;
+  justify-content: flex-end;
+  flex: 1 1 0%;
+}

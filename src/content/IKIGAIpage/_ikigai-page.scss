@@ -1,9 +1,12 @@
 @use '@carbon/react/scss/spacing' as *;
 @use '@carbon/react/scss/type' as *;
 
-.ikigai-picture {
-  height: 300px;
-}
+.ikigai-diagram {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  }
 
 .ikigai-page {
   padding-top: $spacing-07;

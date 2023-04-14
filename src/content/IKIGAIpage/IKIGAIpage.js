@@ -17,14 +17,14 @@ const IKIGAIpage = () => {
         <h2 className="ikigai-page__heading">What is <strong>IKIGAI</strong>?</h2>
         <p className="ikigai-page__p">
           "Japanese concept referring to something that gives a person a sense of <strong>purpose</strong>,
-          a <strong>reason for living</strong>."
+          a <strong>reason for living</strong>." &nbsp; 
           <a href="https://en.wikipedia.org/wiki/Ikigai" target="_blank" rel="noopener noreferrer">
             <Link size="16" />
           </a>
         </p>
         <img
-          className="ikigai-picture"
-          src="http://www.djkn.kemenkeu.go.id/files/images/2020/09/Diagram_Ikigai1.jpg"
+          className="ikigai-diagram"
+          src="diagram_ikigai.png"
           alt="IKIGAI diagram"
         />
       </Column>
