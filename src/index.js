@@ -1,15 +1,16 @@
-import 'core-js/modules/es7.array.includes';
-import 'core-js/modules/es6.array.fill';
-import 'core-js/modules/es6.string.includes';
-import 'core-js/modules/es6.string.trim';
-import 'core-js/modules/es7.object.values';
+import 'core-js/modules/es.array.includes';
+import 'core-js/modules/es.array.fill';
+import 'core-js/modules/es.string.includes';
+import 'core-js/modules/es.string.trim';
+import 'core-js/modules/es.object.values';
+
 
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import { HashRouter as Router } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import { ApolloProvider, ApolloClient, InMemoryCache } from '@apollo/client';
 
 const cache = new InMemoryCache();
@@ -18,19 +19,16 @@ const client = new ApolloClient({
   cache: cache,
   uri: 'https://api.github.com/graphql',
   headers: {
-    authorization: `Bearer ${
-      process.env.REACT_APP_GITHUB_PERSONAL_ACCESS_TOKEN
-    }`,
+    authorization: `Bearer ${process.env.REACT_APP_GITHUB_PERSONAL_ACCESS_TOKEN
+      }`,
   },
 });
 
 ReactDOM.render(
-  <ApolloProvider client={client}>
-    <Router>
+  <BrowserRouter>
       <App />
-    </Router>
-  </ApolloProvider>,
-  document.getElementById('root')
+  </BrowserRouter>,
+document.getElementById('root')
 );
 
 // If you want your app to work offline and load faster, you can change

@@ -4,7 +4,9 @@
   "private": true,
   "repository": "https://github.com/maikllt/maikl-site",
   "bugs": "https://github.com/maikllt/maikl-site/issues",
-  "workspaces": ["carbon-tutorial"],
+  "workspaces": [
+    "carbon-tutorial"
+  ],
   "license": "Apache-2.0",
   "scripts": {
     "build": "react-scripts build",
@@ -25,7 +27,7 @@
     "graphql": "15.5.2",
     "react": "16.10.0",
     "react-dom": "16.10.0",
-    "react-router-dom": "5.0.0",
+    "react-router-dom": "^6.13.0",
     "react-scripts": "5.0.1",
     "sass": "1.51.0"
   },
