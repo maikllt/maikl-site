@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Column, Link } from '@carbon/react';
+import { Grid, Column, Link, Button } from '@carbon/react';
 import { InfoSection, InfoCard } from '../../components/Info';
 import {
   Chat,
@@ -7,7 +7,8 @@ import {
   LogoLinkedin,
   LogoGithub,
   Email,
-  EarthFilled
+  EarthFilled,
+  CalendarAddAlt
 } from '@carbon/react/icons';
 
 const LandingPage = () => {
