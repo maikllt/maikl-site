@@ -13,8 +13,7 @@ import {
 
 const LandingPage = () => {
   const openCalendly = () => {
-    const calendlyLink = 'https://calendly.com/tomas-dambrauskas';
-
+    const calendlyLink = 'https://calendly.com/tomas-dambrauskas/30min';
     window.open(calendlyLink, '_blank');
   };
 
@@ -49,7 +48,7 @@ const LandingPage = () => {
             </Link>
             <Button renderIcon={CalendarAddAlt}
               onClick={openCalendly}
-              style={{ display: 'block', marginBottom: '10px' }}
+              // style={{ display: 'block', marginTop: '20px' }}
             >
               Book my time
             </Button>
