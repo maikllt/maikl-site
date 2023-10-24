@@ -47,8 +47,9 @@ const LandingPage = () => {
               <LogoGithub size="40" />
             </Link>
             <Button renderIcon={CalendarAddAlt}
+              kind="tertiary"
               onClick={openCalendly}
-              // style={{ display: 'block', marginTop: '20px' }}
+            // style={{ display: 'block', marginTop: '20px' }}
             >
               Book my time
             </Button>
