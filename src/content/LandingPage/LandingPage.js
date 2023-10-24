@@ -11,6 +11,12 @@ import {
 } from '@carbon/react/icons';
 
 const LandingPage = () => {
+  const openCalendly = () => {
+    const calendlyLink = 'https://calendly.com/tomas-dambrauskas';
+
+    window.open(calendlyLink, '_blank');
+  };
+
   return (
     <Grid className="landing-page" fullWidth>
       <Column lg={16} md={8} sm={4} className="landing-page__r1">
@@ -40,11 +46,12 @@ const LandingPage = () => {
             <Link href="https://github.com/maikllt" target="_blank">
               <LogoGithub size="40" />
             </Link>
-            <p>
-              <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" >
-              <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-              <script type="text/javascript">window.onload = function() {Calendly.initBadgeWidget({ url: 'https://calendly.com/tomas-dambrauskas', text: 'Schedule time with me', color: '#0069ff', textColor: '#ffffff', branding: true }); }</script>
-            </p>
+            <Button renderIcon={CalendarAddAlt}
+              onClick={openCalendly}
+              style={{ display: 'block', marginBottom: '10px' }}
+            >
+              Book my time
+            </Button>
           </Column>
         </Grid>
       </Column>
