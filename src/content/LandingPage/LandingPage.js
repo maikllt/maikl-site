@@ -40,6 +40,11 @@ const LandingPage = () => {
             <Link href="https://github.com/maikllt" target="_blank">
               <LogoGithub size="40" />
             </Link>
+            <p>
+              <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" >
+              <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+              <script type="text/javascript">window.onload = function() {Calendly.initBadgeWidget({ url: 'https://calendly.com/tomas-dambrauskas', text: 'Schedule time with me', color: '#0069ff', textColor: '#ffffff', branding: true }); }</script>
+            </p>
           </Column>
         </Grid>
       </Column>
