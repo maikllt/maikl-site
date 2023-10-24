@@ -46,8 +46,9 @@ const LandingPage = () => {
             <Link href="https://github.com/maikllt" target="_blank">
               <LogoGithub size="40" />
             </Link>
-            
-            <br />
+            <div className="line-break-container">
+              <br />
+            </div>
             <Button renderIcon={CalendarAddAlt}
               kind="tertiary"
               onClick={openCalendly}
